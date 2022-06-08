@@ -1,0 +1,81 @@
+body {
+  background-image: url(https://manofmany.com/wp-content/uploads/2019/07/50-Minimalist-iPhone-Wallpapers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+i,
+li {
+  color: whitesmoke;
+  font-size: 35px;
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  /* background-color: #8700ee; */
+  height: 50vh;
+}
+nav {
+  display: flex;
+  /* background-color: coral; */
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: royalblue; */
+  width: 100%;
+  box-sizing: border-box;
+}
+li a {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+
+.logo + i {
+  transition: all 0.6s ease;
+  transform: translateY(-50%);
+  /* background-color: violet; */
+}
+
+.logo + i:hover {
+  color: #f00;
+  transform: translateY(5%);
+}
+
+#Menu {
+  display: none;
+}
+label {
+  color: green;
+}
+
+.menu input:checked + label > i {
+  transform: translate(150%, -10%);
+  color: #dd6c00;
+}
+
+.menu input:checked ~ .Fenetre {
+  transform: translateX(0%);
+}
+
+.menu .Fenetre {
+  color: salmon;
+  background-image: linear-gradient(
+    rgba(153, 205, 246, 0.1),
+    rgba(140, 147, 184, 0.15)
+  );
+  border-radius: 10px;
+  font-size: 25px;
+  text-align: center;
+  transform: translateX(110%);
+  overflow: hidden;
+  transition: all 0.6s linear;
+}
+
+.menu input + label > i {
+  transition: all 0.5s ease;
+}
